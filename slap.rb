@@ -1,9 +1,3 @@
-require 'rubygems'
-require File.join(File.dirname(__FILE__),'pathname_patch')
-
-require 'moneta'
-require 'moneta/datamapper'
-
 class Slap
   attr_accessor :sender, :message
 
@@ -57,7 +51,7 @@ class Slap
   end
 
   def storage
-    @storage ||= Moneta::DataMapper.new(:setup => "sqlite3:///#{File.join(File.dirname(__FILE__),'data','slaps.db')}")
+    @storage ||= Moneta::DataMapper.new(:setup => "sqlite3:///#{File.join(Dir.pwd,'data','slaps.db')}")
   end
 
 end
