@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'extlib'
 require 'twibot'
 gem 'twibot', '>=0.1.3'
 require 'daemon-spawn'
