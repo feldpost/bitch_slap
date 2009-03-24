@@ -19,7 +19,7 @@ class Bot < DaemonSpawn::Base
           slap = Slap.create message
           post_tweet slap.outgoing_message
         end
-      rescue => e
+      rescue Exception => e
         STDERR.puts e.message
       end
     end
