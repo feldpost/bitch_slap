@@ -1,0 +1,36 @@
+A terribly useless twitter bot (written for a terribly bored friend). It's best not to ask what this is about and instead just move on and marvel at the beauty of unconditional friendship (or criminal blackmail).
+
+h3. Dependencies
+
+	mbbx6spp-twitter4r >= 0.3.1
+	twibit >= twibot-0.1.3
+	daemon-spawn
+	moneta
+
+
+h3. Configuration
+
+Rename both *bot.yml.sample* files in @config/@:
+
+	@cp config/bot.yml.sample config/bot.yml@
+
+and configure your account:
+
+	username: password
+
+That's all.
+
+
+h3. Usage
+
+To start:
+	
+	@ruby ./bot.rb start@
+
+To stop:
+	
+	@ruby ./bot.ruby stop@
+	
+To see if it's still running:
+	
+	@ruby ./bot.ruby stop@
