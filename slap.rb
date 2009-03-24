@@ -1,4 +1,6 @@
 require 'rubygems'
+require File.join(File.dirname(__FILE__),'pathname_patch')
+
 require 'moneta'
 require 'moneta/datamapper'
 
