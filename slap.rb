@@ -31,7 +31,7 @@ class Slap
   
   def outgoing_message
     if exists?
-       d sender, "Only once a day. Try again tomorrow."
+       d sender, "Steady on there old bean - only once an hour. Try again tomorrow."
     elsif not valid?
       d sender, "We're all about behavior modification and noticed that you didn't target your last note. Try again."
     else
