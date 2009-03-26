@@ -1,7 +1,7 @@
 class Slap
   attr_accessor :sender, :message
 
-  ONE_DAY = 86400 #seconds
+  ONE_HOUR = 3600 #seconds
 
   def self.create( message )
     sender = message.sender.screen_name 
@@ -41,7 +41,7 @@ class Slap
 
   def save
     return false unless valid?
-    storage.store(sender, message, :expires_in => ONE_DAY)
+    storage.store(sender, message, :expires_in => ONE_HOUR)
   end
 
   private
